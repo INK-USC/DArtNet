@@ -1,6 +1,6 @@
 # DArtNet
 
-Paper: [Temporal Attribute Prediction via Joint Modeling of Multi-Relational Structure Evolution]()
+Paper: [Temporal Attribute Prediction via Joint Modeling of Multi-Relational Structure Evolution](https://arxiv.org/abs/2003.03919)
 
 <p align="center"><img src="figures/dag3.png" width="500"/></p>
 
