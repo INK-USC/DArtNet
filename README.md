@@ -10,7 +10,25 @@ This repository contains the implementation of the DArtNet architectures describ
 
 <p align="center"><img src="figures/network_final.png" width="500"/></p>
 
-Time series prediction is an important problem in machine learning. Previous methods for time series prediction did not involve additional information. With a lot of dynamic knowledge graphs available, we can use this additional information to predict the time series better. Recently, there has been a focus on the application of deep representation learning on dynamic graphs. These methods predict the structure of the graph by reasoning over the interactions in the graph at previous time steps. In this paper, we propose a new framework to incorporate the information from dynamic knowledge graphs for time series prediction. We show that if the information contained in the graph and the time series data are closely related, then this inter-dependence can be used to predict the time series with improved accuracy. Our framework, DArtNet, learns a static embedding for every node in the graph as well as a dynamic embedding which is dependent on the dynamic attribute value (time-series). Then it captures the information from the neighborhood by taking a relation specific mean and encodes the history information using RNN. We jointly train the model link prediction and attribute prediction. We evaluate our method on five specially curated datasets for this problem and show a consistent improvement in time series prediction results. 
+Time series prediction is an important problem in machine learning. Previous methods for time series prediction did not involve additional information. With a lot of dynamic knowledge graphs available, we can use this additional information to predict the time series better. Recently, there has been a focus on the application of deep representation learning on dynamic graphs. These methods predict the structure of the graph by reasoning over the interactions in the graph at previous time steps. In this paper, we propose a new framework to incorporate the information from dynamic knowledge graphs for time series prediction. We show that if the information contained in the graph and the time series data are closely related, then this inter-dependence can be used to predict the time series with improved accuracy. Our framework, DArtNet, learns a static embedding for every node in the graph as well as a dynamic embedding which is dependent on the dynamic attribute value (time-series). Then it captures the information from the neighborhood by taking a relation specific mean and encodes the history information using RNN. We jointly train the model link prediction and attribute prediction. We evaluate our method on five specially curated datasets for this problem and show a consistent improvement in time series prediction results.
+
+# Citation
+
+If you use this paper or code, please cite our work as:
+```bash
+@inproceedings{ijcai2020-386,
+  title     = {Temporal Attribute Prediction via Joint Modeling of Multi-Relational Structure Evolution},
+  author    = {Garg, Sankalp and Sharma, Navodita and Jin, Woojeong and Ren, Xiang},
+  booktitle = {Proceedings of the Twenty-Ninth International Joint Conference on
+               Artificial Intelligence, {IJCAI-20}},
+  publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+  pages     = {2785--2791},
+  year      = {2020},
+  month     = {7},
+  doi       = {10.24963/ijcai.2020/386},
+  url       = {https://doi.org/10.24963/ijcai.2020/386},
+}
+```
 
 ## Quick Links
 - [Code Organization](#Organization)
